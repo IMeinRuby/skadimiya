@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+
+}
+
+.pic {
+	opacity: 0.6;
+	position: static;
+	float: right;
+	margin-right: 10px;
+	z-index: -1;
+	border-radius: 50%;
+	border-style: inset;
+
+}
+
+body {
+	background: -webkit-linear-gradient(150deg, green 10%, #EAECC6 90%); 
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-attachment: fixed;
+}
+
+.logo{
+	margin-left: 30px;
+	margin-top: 20px;
+	animation-name: slidefour;
+	animation-duration: 2s;
+	position: relative;
+}
+
+.title{
+	top: 25%;
+	margin-left: 100px;
+	position: absolute;
+	color: green;
+	font-size: 25px;
+	animation-name: slidethree;
+	animation-duration: 2s;
+}
+
+.header1 {
+	margin-left: 20px;
+	margin-top: 3%;
+	font-style: italic;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 5px 20px;
+	background: -webkit-linear-gradient(150deg, green, #EAECC6 90%);
+	border-radius: 50px;
+	position: absolute;
+	animation-name: slide;
+	animation-duration: 2s;
+	z-index: 1;
+	border-style: inset;
+}
+
+.desc1{
+	font-size: 17px;
+}
+
+.header2 {
+	margin-top: 250px;
+	margin-left: 20px;
+	font-style: italic;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 5px 20px;
+	background: -webkit-linear-gradient(150deg, green 10%, #EAECC6 90%);
+	border-radius: 50px;
+	position: absolute;
+	animation-name: slide;
+	animation-duration: 2s;
+	z-index: 1;
+	border-style: inset;
+}
+
+.desc2 {
+	font-size: 17px;	
+}
+
+.header3 {
+	margin-top: 510px;
+	margin-left: 20px;
+	font-style: italic;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 5px 20px;
+	background: -webkit-linear-gradient(150deg, green 30%, #EAECC6 90%);
+	border-radius: 50px;
+	position: absolute;
+	animation-name: slide;
+	animation-duration: 2s;
+	z-index: 1;
+	border-style: inset;
+}
+
+.desc3 {
+	font-size: 17px;	
+}
+
+ul{
+	position: absolute;
+	list-style-type: none;
+	margin-top: -75px;
+	margin-left: 1100px;
+	animation-name: slidetwo;
+	animation-duration: 2s;
+}
+
+ul li{
+	display: inline-block; 
+}
+
+ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	padding: 5px 20px;
+	border-radius: 15px;
+	border: 3px solid transparent;
+	transition: 0.6s ease;
+	margin: 0 4px;
+}
+
+ul li.account a{
+	background-color: #B2EE9D;
+}
+
+ul li a:hover{
+	background-color: #7CEA54;
+	box-shadow: 0 0 10px #7CF052, 0 0 40px #7CF052, 0 0 80px #7CF052;
+	color: black;
+	cursor: pointer;
+}
+
+/*animations*/
+
+@keyframes slide{
+	0% {
+	opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	from {left: -200px;}
+	to {left: 1px;}
+}
+
+@keyframes slidetwo{
+	0% {
+	opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	from {top: 50px;}
+	to {top: 100px;}
+}
+
+@keyframes slidethree{
+	0% {
+	opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	from {top: -100px;}
+	to {top: 20px;}
+}
+
+@keyframes slidefour{
+	0% {
+	opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	from {top: -100px;}
+	to {top: 0px;}
+}
